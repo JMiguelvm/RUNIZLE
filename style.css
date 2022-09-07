@@ -1,0 +1,293 @@
+/* ORDEN
+
+ - HEADER
+*/
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFF;
+  padding: 80px;
+  padding-top: 80px;
+}
+
+/* -------------------------------------------- HEADER */
+
+.header {
+  background-color: #799CB0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0; 
+  display: flex;
+}
+
+.nav__right + .nav__left + .nav__logo {
+  width: max-content;
+}
+
+.nav__left {
+  display: inline-block;
+  width: 20%;
+}
+
+.nav__logo {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.nav__right {
+  position: absolute;
+  display: inline-block;
+  line-height: 60px;
+  width: 38%;
+  margin-left: auto;
+  float: right;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.nav__item {
+  position: relative;
+  display: flex;
+  float: right;
+}
+
+.nav__item > div {
+  padding-right: 40px;
+}
+
+.logo > img {
+  width: 245px;
+  height: 65px;
+}
+
+.usuario {
+  display: inline-block;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 20%;
+  line-height: 60px;
+  padding-left: 1%;
+  transition: 0.4s;
+}
+
+.usuario_visible {
+  background-color: #4F6877;
+}
+
+
+.usuario__item--main {
+  cursor: pointer;
+  outline: none;
+  width: 100px;
+  line-height: 58px;
+  border: 0;
+  font-size: 20px;
+  background-color: #799CB0;
+  color: #4F6877;
+  transition: 0.4s;
+  align-content: center;
+  display: flex;
+}
+
+.usuario__item--main > p {
+  padding-left: 10px;
+  color: #799CB0;
+}
+
+.usuario__item--main_visible > p {
+  color: #fff;
+  background-color: #4F6877;
+}
+
+
+.usuario__item--main:hover {
+  color: white;
+  font-size: 23px;
+}
+
+.usuario__item--main_visible {
+  color: #fff;
+  background-color: #4F6877;
+}
+
+.usuario__container {
+  width: 225px;
+  background-color: #202020;
+  display: none;
+}
+
+.usuario__container_visible {
+  display: block;
+  position:relative;
+  right: 5.5%;
+  transition: right 0.4s;
+}
+
+.usuario__item {
+  width: auto;
+  height: 60px;
+  display: block;
+  color: white;
+  padding-left: 10px;
+  line-height: 40px;
+  display: flex;
+  line-height: 60px;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+
+.usuario__item:hover {
+  background-color: #303030;
+}
+
+.usuario__item > button {
+  cursor: pointer;
+  height: 60px;
+  width: 225px;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.usuario__item > button > span {
+  font-size: 15px;
+}
+
+.usuario__item > .fas {
+  line-height: 60px;
+  padding-right: 20px;
+}
+
+.search {
+  outline: none;
+  border: none;
+  border-radius: 5em;
+  padding: 4px 8px;
+  background-color: #4F6877;
+  color: white;
+  display: none;
+  top: 100px;
+}
+
+.search::placeholder {
+  color: #fff;
+}
+
+.search__button {
+  margin-left: 73%;
+  transition: margin-left 0.1s;
+  outline: none;
+  line-height: 60px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 2%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5em;
+  background-color: #4F6877;
+}
+
+.search__button > i {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.search__button_toggle {
+  margin-left: 26%;
+}
+
+.search__toggle {
+  display: inline-block;
+}
+
+.search__button > img {
+  width: 30px;
+  height: 30px;
+}
+
+.lupa__a_toggle {
+  display: none;
+}
+.upload {
+  padding-right: 40px;
+  line-height: 60px;
+  font-size: 25px;
+  color: #4F6877;
+  transition: 0.4s;
+  position: relative;
+}
+
+.upload:hover {
+  color: white;
+  font-size: 28px;
+}
+
+
+/* -------------------------------- BODY */
+
+.rels {
+  width: 100%;
+  height: 70%;
+}
+
+.rel__item {
+  width: 30%;
+  display: block;
+  background-color: #202020;
+  border-radius: 1em;
+  height: 350px;
+  text-align: center;
+}
+
+.rel__img {
+  width: 90%;
+  height: 80%;
+  background: red;
+}
+
+.rel__link {
+  float: left;
+  font-size: 20px;
+  padding-left: 20px;
+  color: #fff;
+  margin-top: 2%;
+}
+
+.rel__like {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-top: 3%;
+  margin-right: 20px;
+}
+
+.perfil {
+  position: relative;
+  top: 8%;
+  left: -37%;
+}
