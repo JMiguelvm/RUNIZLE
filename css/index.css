@@ -152,6 +152,7 @@ body {
 }
 
 .usuario__item--main > p {
+  font-family: 'Roboto', sans-serif;
   padding-left: 10px;
   color: #799CB0;
 }

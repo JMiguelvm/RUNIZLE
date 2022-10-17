@@ -61,6 +61,10 @@
     
 }
 
+.rel__comment__user > a {
+    color:#6eaad1;
+}
+
 .rel__comment__user_image > img{
     width: 60px;
     height: 60px;
