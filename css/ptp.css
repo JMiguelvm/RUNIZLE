@@ -99,9 +99,9 @@
 @media (max-width: 980px) {
     .rel__img {
         grid-column: 1 / span 3;
-        width: 450px;
-        height: 450px;
-        margin-left: 20%;
+        width: 100%;
+        height: 100%;
+        margin-left: -5px;
     }
 
     .rel__quote {
@@ -123,6 +123,50 @@
     }
 }
 
+@media (max-width: 680px) {
+    .rel__comment {
+        height: 220px;
+        width: 380px;
+    }
+
+    .rel__comment__user_image > img{
+        margin-bottom: 100px;
+    }
+
+    .rel__quote {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 110px
+    }
+}
+
+@media (max-width: 350px) {
+
+    .rel__img {
+        grid-column: 1 / span 3;
+        width: 90%;
+        height: 90%;
+    }
+
+    .rel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+
+    .rel__description {
+        width: 90%;
+    }
+
+    .rel__comment {
+        height: 380px;
+        width: 240px;
+    }
+
+    .rel__comment__user_image > img{
+        margin-bottom: 230px;
+    }
+}
 
 footer {
     background-color: #415663;
@@ -188,4 +232,11 @@ footer > div {
 
 .footer__social > a:hover {
     color: #82bcdf;
+}
+
+
+@media (max-width: 460px) {
+    .footer__img{
+        margin: 0 auto;
+    }
 }

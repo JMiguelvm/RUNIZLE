@@ -113,9 +113,15 @@ body {
   display: none;
 }
 
+.logo {
+  width: 245px;
+  height: 45px;
+  margin-top: 8px;
+}
+
 .logo > img {
   width: 245px;
-  height: 65px;
+  height: 45px;
 }
 
 .usuario {
@@ -616,6 +622,18 @@ footer > div {
   color: #82bcdf;
 }
 
+@media (max-width: 460px) {
+  .rels {
+    margin-left: 0;
+  }
+
+  .rel__item {
+    margin: 0 auto;
+  }
+  .footer__img{
+      margin: 0 auto;
+  }
+}
 
 /*.rels {
   display: gird;
